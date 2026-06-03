@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Cosmetic Manufacturer | OEM & ODM</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #c0a062; /* Elegant Gold */
+            --bg-light: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Top Header */
+        .top-bar {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+        }
+
+        /* Main Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .btn-inquiry {
+            background-color: var(--accent-color);
+            color: #fff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), url('https://via.placeholder.com/1920x800?text=Cosmetic+Manufacturing+Facility') center/cover;
+            color: white;
+            text-align: center;
+            padding: 6rem 5%;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+        }
+
+        /* Factory Stats */
+        .stats-container {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding: 3rem 5%;
+            background-color: var(--bg-light);
+            text-align: center;
+        }
+
+        .stat-box h3 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+        }
+
+        .stat-box p {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        /* Private Label Categories */
+        .categories {
+            padding: 5rem 5%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--accent-color);
+            margin: 1rem auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .category-card {
+            border: 1px solid #eee;
+            padding: 2rem 1rem;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        /* Core Capabilities */
+        .capabilities {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5rem 5%;
+        }
+
+        .capabilities .section-title::after {
+            background: white;
+        }
+
+        .cap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .cap-box {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 4rem 5% 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span>ISO 9001 & GMP Certified Cosmetic Manufacturer</span>
+        <span>EN | ID | ZH</span>
+    </div>
+
+    <header>
+        <div class="logo">OASIS MFG.</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">OEM/ODM Service</a>
+            <a href="#">Private Label</a>
+            <a href="#">Capabilities</a>
+        </nav>
+        <a href="#contact" class="btn-inquiry">Business Inquiry</a>
+    </header>
+
+    <section class="hero">
+        <h1>Premium Cosmetic Manufacturer</h1>
+        <p>Offering highly competitive private label solutions to global beauty companies. From R&D, formulation, to mass production.</p>
+        <a href="#contact" class="btn-inquiry" style="font-size: 1.2rem; padding: 1rem 2rem;">Request a Quote</a>
+    </section>
+
+    <section class="stats-container">
+        <div class="stat-box">
+            <h3>1,000</h3>
+            <p>Pcs MOQ Per Product</p>
+        </div>
+        <div class="stat-box">
+            <h3>20,000</h3>
+            <p>SQM Factory Size</p>
+        </div>
+        <div class="stat-box">
+            <h3>4.2M</h3>
+            <p>Monthly Production Capacity</p>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2 class="section-title">Private Label Products</h2>
+        <div class="grid">
+            <div class="category-card">
+                <div class="category-icon">✨</div>
+                <h3>Facial Care</h3>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">💄</div>
+                <h3>Make Up</h3>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">🧖‍♀️</div>
+                <h3>Body Care</h3>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">💧</div>
+                <h3>Functional Oil</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="capabilities">
+        <h2 class="section-title" style="text-align: center;">Core Capabilities</h2>
+        <div class="cap-grid">
+            <div class="cap-box">
+                <h3>Research & Development</h3>
+                <p>Skilled chemists employing organic raw materials and herbal extracts to craft customized formulas.</p>
+            </div>
+            <div class="cap-box">
+                <h3>Manufacturing & GMP</h3>
+                <p>Adhering to stringent FDA quality control and Good Manufacturing Practice (GMP) standards.</p>
+            </div>
+            <div class="cap-box">
+                <h3>Turnkey Solutions</h3>
+                <p>From formulas, packaging styles, to filling & packing, we provide all elements for a successful launch.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-col">
+            <h4>About Oasis MFG</h4>
+            <p>A premier beauty and personal care enterprise specializing in skincare and color cosmetics for global retailers.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Us</h4>
+            <p>Email: inquiry@oasismfg.com</p>
+            <p>WhatsApp: +123 4567 890</p>
+            <p>Address: Industrial Tech Park, Block D</p>
+        </div>
+    </footer>
+
+</body>
+</html>
